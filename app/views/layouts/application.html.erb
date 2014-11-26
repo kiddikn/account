@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Account</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="ja">
+    <%= render 'layouts/header' %>
 
-<%= yield %>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/ledgers">Otakaikei</a>
+                <div class="navbar-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><%= link_to "about", "http://kiddikn.php.xdomain.jp/kiddikn/", :target => '_blank' %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-</body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <% flash.each do |name, msg| %>
+                        <div class="alert alert-<%= name == "notice" ? "success" : "error" %>">
+                            <a class="close" data-dismiss="alert">×</a> <!-- アラートダイアログに×ボタンをつける -->
+                            <%= msg %>
+                        </div>
+                    <% end %>
+                    <%= yield %>
+                </div>
+
+            </div><!--/row-->
+
+            <footer>
+                <p>&copy; kiddikn 2014</p>
+            </footer>
+
+        </div> <!-- /container -->
+    </body>
 </html>
+

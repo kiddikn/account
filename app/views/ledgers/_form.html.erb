@@ -1,0 +1,16 @@
+<%= simple_form_for @ledger,wrapper: "horizontal_form", :html => { :class => 'form-horizontal' } do |f| %>
+    <%= f.input :no, :as => :hidden %>
+    <%= f.input :processing, label: "立替日",input_wrapper_html: { class: "col-xs-2" } %>
+    <%= f.input :group     , label: "委員会", collection: [ "事務局", "パトロール", "コミュニティ", "スポーツ"],input_wrapper_html: { class: "col-xs-3" } %>
+    <%= f.input :manager   , label: "立替者", input_wrapper_html: { class: "col-xs-3" } %>
+    <%= f.input :item      , label: "項目", input_wrapper_html: { class: "col-xs-2" } %>
+    <%= f.input :resume    , label: "摘要", input_wrapper_html: { class: "col-xs-5" } %>
+    <%= f.input :amount    , label: "金額", input_wrapper_html: { class: "col-xs-3" } %>
+    <%= f.input :note      , label: "備考", input_wrapper_html: { class: "col-xs-5" } %>
+
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+         ledgers_path, :class => 'btn btn-default' %>
+
+<% end %>
+
