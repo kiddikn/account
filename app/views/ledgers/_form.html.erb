@@ -1,5 +1,7 @@
 <%= simple_form_for @ledger,wrapper: "horizontal_form", :html => { :class => 'form-horizontal' } do |f| %>
     <%= f.input :no, :as => :hidden %>
+    <%= f.input :year,  collection: [2014],input_wrapper_html: { class: "col-xs-2" } %>
+    <%= f.input :month, collection: 1..12,input_wrapper_html: { class: "col-xs-2" } %>
     <%= f.input :processing, label: "立替日",input_wrapper_html: { class: "col-xs-2" } %>
     <%= f.input :group     , label: "委員会", input_wrapper_html: { class: "col-xs-3" },
                            collection: [ "事務局", "パトロール", "コミュニティ", "スポーツ"] %>
@@ -9,7 +11,7 @@
                      "備品","光熱費","機材","工具","修繕費",
                      "賃借料","補助金","支払手数料","在庫保持費","生活費","積立金","人件費"] %>
     <%= f.input :resume    , label: "摘要", input_wrapper_html: { class: "col-xs-5" } %>
-    <%= f.input :amount    , label: "金額", input_wrapper_html: { class: "col-xs-3" } %>
+    <%= f.input :amount    , label: "金額", input_wrapper_html: { class: "col-xs-3" }, hint: "半角英数字で入力" %>
     <%= f.input :note      , label: "備考", input_wrapper_html: { class: "col-xs-5" } %>
 
     <%= f.submit nil, :class => 'btn btn-primary' %>

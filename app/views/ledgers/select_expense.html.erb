@@ -1,0 +1,15 @@
+<%= form_tag ledgers_path,:method => 'get' do %>
+    <div id="field">
+        <%= label_tag '立替年' %>
+        <%= select_tag :year, options_for_select([2014,2014])%>
+        <br/ >
+        <%= label_tag '立替月' %>
+        <%= select_tag :month, options_for_select(1..12), :include_blank => true %>
+        <br />
+        <%= label_tag '委員会' %>
+        <%= select_tag :group, options_for_select([["事務局", "事務局"], ["コミュニティ", "コミュニティ"],
+                                                   ["パトロール", "パトロール"], ["スポーツ", "スポーツ"]]),  :include_blank => true %>
+        </br >
+        <%= submit_tag "入力に進む", :class => "btn  btn-primary", :name => nil %>
+    </div>
+<% end %>

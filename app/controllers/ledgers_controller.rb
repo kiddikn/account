@@ -4,7 +4,7 @@ class LedgersController < ApplicationController
   # GET /ledgers
   # GET /ledgers.json
   def index
-    @ledgers = Ledger.all
+    @ledgers = Ledger.search(params[:group])
   end
 
   # GET /ledgers/1
@@ -21,6 +21,9 @@ class LedgersController < ApplicationController
   def edit
   end
 
+  def select_expense
+  end
+
   # POST /ledgers
   # POST /ledgers.json
   def create
@@ -28,7 +31,7 @@ class LedgersController < ApplicationController
 
     respond_to do |format|
       if @ledger.save
-        format.html { redirect_to @ledger, notice: 'Ledger was successfully created.' }
+        format.html { redirect_to @ledger, notice: '帳簿に追加しました' }
         format.json { render action: 'show', status: :created, location: @ledger }
       else
         format.html { render action: 'new' }
@@ -42,7 +45,7 @@ class LedgersController < ApplicationController
   def update
     respond_to do |format|
       if @ledger.update(ledger_params)
-        format.html { redirect_to @ledger, notice: 'Ledger was successfully updated.' }
+        format.html { redirect_to @ledger, notice: '指定した更新が成功しました' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -69,6 +72,6 @@ class LedgersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def ledger_params
-      params.require(:ledger).permit(:no, :processing, :group, :manager, :item, :resume, :amount, :note)
+      params.require(:ledger).permit(:no, :year, :month, :processing, :group, :manager, :item, :resume, :amount, :note)
     end
 end

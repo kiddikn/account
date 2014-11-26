@@ -5,32 +5,32 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:no) %></th>
-      <th><%= model_class.human_attribute_name(:processing) %></th>
-      <th><%= model_class.human_attribute_name(:group) %></th>
-      <th><%= model_class.human_attribute_name(:manager) %></th>
-      <th><%= model_class.human_attribute_name(:item) %></th>
-      <th><%= model_class.human_attribute_name(:resume) %></th>
-      <th><%= model_class.human_attribute_name(:amount) %></th>
-      <th><%= model_class.human_attribute_name(:note) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%= "申請年"%></th>
+      <th><%= "申請月" %></th>
+      <th><%= "処理日" %></th>
+      <th><%= "委員会" %></th>
+      <th><%= "立替者" %></th>
+      <th><%= "項目" %></th>
+      <th><%= "摘要" %></th>
+      <th><%= "金額" %></th>
+      <th><%= "備考" %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @ledgers.each do |ledger| %>
       <tr>
-        <td><%= link_to ledger.id, ledger_path(ledger) %></td>
-        <td><%= ledger.no %></td>
-        <td><%= ledger.processing %></td>
+        <td><%= link_to ledger.no, ledger_path(ledger) %></td>
+        <td><%= ledger.year %></td>
+        <td><%= ledger.month %></td>
+        <td><%= link_to ledger.processing, ledger_path(ledger) %></td>
         <td><%= ledger.group %></td>
         <td><%= ledger.manager %></td>
         <td><%= ledger.item %></td>
         <td><%= ledger.resume %></td>
         <td><%= ledger.amount %></td>
         <td><%= ledger.note %></td>
-        <td><%=l ledger.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_ledger_path(ledger), :class => 'btn btn-default btn-xs' %>
@@ -48,3 +48,8 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_ledger_path,
             :class => 'btn btn-primary' %>
+<%= link_to t('立替報告'), '/ledgers/select_expense',
+            :class => 'btn btn-primary' %>
+
+
+
