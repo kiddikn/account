@@ -8,6 +8,8 @@ Rails.application.routes.draw do
           get 'view'
           get 'account_select'
           get 'income_all'
+          get 'report_select'
+          get 'output', as: :output
       end
   end
 

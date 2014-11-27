@@ -1,16 +1,27 @@
-<%= form_tag '/ledgers/add_expense',:method => 'get' do %>
-    <div id="field">
-        <%= label_tag '申請年' %>
-        <%= select_tag :year, options_for_select([2014])%>
-        <br/ >
-        <%= label_tag '申請月' %>
-        <%= select_tag :month, options_for_select(1..12), :include_blank => true %>
-        <br />
-        <%= label_tag '委員会' %>
+<div class="col-lg-12">
+<%= form_tag '/ledgers/add_expense', :class => "form-horizontal", :method => 'get' do %>
+    <div class="form-group integer ledger_year">
+        <%= label_tag :year, '申請年', :class => "year optional col-sm-3 control-label"  %>
+        <div class="col-xs-3">
+        <%= select_tag :year, options_for_select([2014]), :class=>"year optional col-sm-3 form-control"%>
+        </div>
+    </div>
+    <div class="form-group integer ledger_month">
+        <%= label_tag :month, '申請月', :class => "month optional col-sm-3 control-label"  %>
+        <div class="col-xs-3">
+        <%= select_tag :month, options_for_select(1..12), :include_blank => true, :class=>"month optional col-sm-3 form-control" %>
+        </div>
+    </div>
+    <div class="form-group string ledger_group">
+        <%= label_tag :group, '委員会', :class => "month optional col-sm-3 control-label"  %>
+        <div class="col-xs-3">
         <%= select_tag :group, options_for_select([["事務局", "事務局"], ["コミュニティ", "コミュニティ"],
-                                                   ["パトロール", "パトロール"], ["スポーツ", "スポーツ"]]),  :include_blank => true %>
-        <br />
-        <br />
+                                                   ["パトロール", "パトロール"], ["スポーツ", "スポーツ"]]),  :include_blank => true,
+                                                   :class=>"month optional col-sm-3 form-control" %>
+        </div>
+    </div>
+    <div class="col-xs-3">
         <%= submit_tag "入力に進む", :class => "btn  btn-primary", :name => nil %>
     </div>
 <% end %>
+</div>

@@ -1,4 +1,16 @@
 GIT
+  remote: git://github.com/activerecord-hackery/ransack.git
+  revision: 742425ade4bb66db573dc13bf436a8f3c87b733b
+  branch: rails-4.1
+  specs:
+    ransack (1.2.4)
+      actionpack (>= 4.0)
+      activerecord (>= 4.0)
+      activesupport (>= 4.0)
+      i18n
+      polyamorous (~> 1.1)
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 1d93c5a77049b3d21d17c847ad0531d7714fa229
   branch: bootstrap3
@@ -70,6 +82,8 @@ GEM
     minitest (5.4.3)
     multi_json (1.10.1)
     pg (0.15.1)
+    polyamorous (1.1.0)
+      activerecord (>= 3.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -145,6 +159,7 @@ DEPENDENCIES
   pg (= 0.15.1)
   rails (= 4.1.8)
   rails_12factor (= 0.0.2)
+  ransack!
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   simple_form

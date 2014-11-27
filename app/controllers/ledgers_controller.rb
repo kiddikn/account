@@ -60,7 +60,7 @@ class LedgersController < ApplicationController
     @day = Time.now
     @no = "I" + (Ledger.where(group: "収入").count + 1).to_s
     @ledger = Ledger.new(no: @no, group: "収入", year: @day.year.to_s, month: @day.month.to_s)
-    @ledgers = Ledger.group("収入");
+    @ledgers = Ledger.choose("収入","","");
   end
 
   # 会計専用ページ
@@ -71,8 +71,14 @@ class LedgersController < ApplicationController
   def report_select
   end
 
+  def output
+    @year = params[:year].to_s
+    @side = params[:month].to_s
+    @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
+  end
+
   def income_all
-    @ledgers = Ledger.group("収入");
+    @ledgers = Ledger.choose("収入","","");
   end
 
   # GET /ledgers/new
