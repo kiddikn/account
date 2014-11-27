@@ -7,10 +7,18 @@ class Ledger < ActiveRecord::Base
     validates :month, presence: true
 
     def self.search(search) #self.でクラスメソッドとしている
-        if search.nil? || search.empty? # Controllerから渡されたパラメータが!= nilの場合は、titleカラムを部分一致検索
-            Ledger.all #全て表示。
+        if search.nil? || search.empty?
+            Ledger.all
         else
             Ledger.where(group: "#{search}")
+        end
+    end
+
+    def self.choose(group, year, month)
+        if group.empty? && year.empty? && month.empty?
+            Ledger.all
+        else
+            Ledger.where(group: "#{group}", year: "#{year}", month: "#{month}")
         end
     end
 

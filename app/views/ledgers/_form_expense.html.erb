@@ -1,10 +1,9 @@
 <%= simple_form_for @ledger,wrapper: "horizontal_form", :html => { :class => 'form-horizontal' } do |f| %>
-    <%= f.input :no, :as => :hidden %>
-    <%= f.input :year,  label: "申請年", collection: [2014],input_wrapper_html: { class: "col-xs-2" } %>
-    <%= f.input :month, label: "申請月", collection: 1..12,input_wrapper_html: { class: "col-xs-2" } %>
+    <%= f.input :no        , :as => :hidden %>
+    <%= f.input :year      , :as => :hidden  %>
+    <%= f.input :month     , :as => :hidden %>
     <%= f.input :processing, label: "立替日",input_wrapper_html: { class: "col-xs-2" } %>
-    <%= f.input :group     , label: "委員会", input_wrapper_html: { class: "col-xs-3" },
-                           collection: [ "事務局", "パトロール", "コミュニティ", "スポーツ"] %>
+    <%= f.input :group     , :as => :hidden %>
     <%= f.input :manager   , label: "立替者", input_wrapper_html: { class: "col-xs-3" } %>
     <%= f.input :item      , label: "項目", input_wrapper_html: { class: "col-xs-3" },
         collection: ["イベント費","登録費","消耗品費","通信費","旅費交通費","保険料","雑費",
@@ -19,4 +18,5 @@
          ledgers_path, :class => 'btn btn-default' %>
 
 <% end %>
+
 

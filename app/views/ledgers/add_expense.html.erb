@@ -1,0 +1,11 @@
+<%- model_class = Ledger -%>
+<div class="page-header">
+  <h1>立替・振込申請</h1>
+  <p><%= @select_msg %></p>
+</div>
+<%= render :partial => 'form_expense' %>
+
+<!-- :partialでviewする -->
+<%= render :partial => 'view' %>
+
+

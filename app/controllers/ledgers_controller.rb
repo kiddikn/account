@@ -24,6 +24,12 @@ class LedgersController < ApplicationController
   def select_expense
   end
 
+  def add_expense
+    @select_msg = params[:group] + "委員会" + params[:year] + "年" + params[:month] + "月申請分"
+    @ledger = Ledger.new(group: params[:group], year: params[:year], month: params[:month])
+    @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
+  end
+
   # POST /ledgers
   # POST /ledgers.json
   def create
@@ -31,10 +37,10 @@ class LedgersController < ApplicationController
 
     respond_to do |format|
       if @ledger.save
-        format.html { redirect_to @ledger, notice: '帳簿に追加しました' }
+        format.html { redirect_to :back, notice: '帳簿に追加しました' }
         format.json { render action: 'show', status: :created, location: @ledger }
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to :back,notice: '記帳に失敗しました' }
         format.json { render json: @ledger.errors, status: :unprocessable_entity }
       end
     end

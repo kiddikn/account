@@ -1,9 +1,9 @@
-<%= form_tag ledgers_path,:method => 'get' do %>
+<%= form_tag '/ledgers/add_expense',:method => 'get' do %>
     <div id="field">
-        <%= label_tag '立替年' %>
-        <%= select_tag :year, options_for_select([2014,2014])%>
+        <%= label_tag '申請年' %>
+        <%= select_tag :year, options_for_select([2014])%>
         <br/ >
-        <%= label_tag '立替月' %>
+        <%= label_tag '申請月' %>
         <%= select_tag :month, options_for_select(1..12), :include_blank => true %>
         <br />
         <%= label_tag '委員会' %>
