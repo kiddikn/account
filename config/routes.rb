@@ -5,6 +5,9 @@ Rails.application.routes.draw do
           get 'select_expense'
           get 'add_expense'
           get 'add_income'
+          get 'view'
+          get 'account_select'
+          get 'income_all'
       end
   end
 
