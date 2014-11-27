@@ -1,4 +1,12 @@
 class LedgersController < ApplicationController
+  GROUP_MAP = {
+      "スポーツ" => "S",
+      "パトロール" => "P",
+      "コミュニティ" => "C",
+      "事務局" => "J",
+      "収入" => "I"
+  }
+
   before_action :set_ledger, only: [:show, :edit, :update, :destroy]
 
   # GET /ledgers
@@ -25,9 +33,21 @@ class LedgersController < ApplicationController
   end
 
   def add_expense
+    # param nil? empty? redirect_to :back
     @select_msg = params[:group] + "委員会" + params[:year] + "年" + params[:month] + "月申請分"
-    @ledger = Ledger.new(group: params[:group], year: params[:year], month: params[:month])
+
+    @count = Ledger.where(group: params[:group],year: params[:year],month: params[:month]).count + 1
+    @no = GROUP_MAP[params[:group]] + params[:month] + "-" + @count.to_s
+    @ledger = Ledger.new(no: @no, group: params[:group], year: params[:year], month: params[:month])
+
     @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
+  end
+
+  def add_income
+    @day = Time.now
+    @no = "I" + (Ledger.where(group: "収入").count + 1).to_s
+    @ledger = Ledger.new(no: @no, group: "収入", year: @day.year.to_s, month: @day.month.to_s)
+    @ledgers = Ledger.search("収入");
   end
 
   # POST /ledgers
@@ -51,10 +71,10 @@ class LedgersController < ApplicationController
   def update
     respond_to do |format|
       if @ledger.update(ledger_params)
-        format.html { redirect_to @ledger, notice: '指定した更新が成功しました' }
+        format.html { redirect_to action: 'index', notice: '指定した更新が成功しました' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
+        format.html { render action: 'edit', notice: '更新に失敗しました' }
         format.json { render json: @ledger.errors, status: :unprocessable_entity }
       end
     end

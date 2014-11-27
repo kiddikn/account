@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       collection do
           get 'select_expense'
           get 'add_expense'
+          get 'add_income'
       end
   end
 

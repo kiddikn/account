@@ -22,4 +22,6 @@ class Ledger < ActiveRecord::Base
         end
     end
 
+    # 大竹会計が欲しい検索を追加
+
 end

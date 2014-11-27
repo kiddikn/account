@@ -2,13 +2,14 @@
     <%= f.input :no        , :as => :hidden %>
     <%= f.input :year      , :as => :hidden  %>
     <%= f.input :month     , :as => :hidden %>
-    <%= f.input :processing, label: "立替日",input_wrapper_html: { class: "col-xs-2" } %>
+    <%= f.input :processing, label: "取得日",input_wrapper_html: { class: "col-xs-2" } %>
     <%= f.input :group     , :as => :hidden %>
-    <%= f.input :manager   , label: "立替者", input_wrapper_html: { class: "col-xs-3" } %>
+    <%= f.input :manager   , label: "記入責任者", input_wrapper_html: { class: "col-xs-3" } %>
     <%= f.input :item      , label: "項目", input_wrapper_html: { class: "col-xs-3" },
-        collection: ["イベント費","登録費","消耗品費","通信費","旅費交通費","保険料","雑費",
-                     "備品","光熱費","機材","工具","修繕費",
-                     "賃借料","補助金","支払手数料","在庫保持費","生活費","積立金","人件費"] %>
+        collection: ["内部収入-内部支援金","内部収入-年会費","内部収入-物品販売金",
+                     "内部収入-クラブ運営費","内部収入-利息","内部収入-スポーツ安全保険",
+                     "外部収入-ガード委託料","外部収入-補助金","外部収入-JLA講習会残金",
+                     "外部収入-JLA Jr.pg助成金","外部収入-鉾田市体協補助金","外部収入-外部謝礼金","その他"] %>
     <%= f.input :resume    , label: "摘要", input_wrapper_html: { class: "col-xs-5" } %>
     <%= f.input :amount    , label: "金額", input_wrapper_html: { class: "col-xs-3" }, hint: "半角英数字で入力(,を入れない)" %>
     <%= f.input :note      , label: "備考", input_wrapper_html: { class: "col-xs-5" } %>
@@ -18,5 +19,6 @@
          ledgers_path, :class => 'btn btn-default' %>
 
 <% end %>
+
 
 
