@@ -73,7 +73,12 @@ class LedgersController < ApplicationController
 
   def output
     @year = params[:year].to_s
-    @side = params[:month].to_s
+    if !params[:month].blank?
+        @side = params[:month].to_s + "月立替分"
+    else
+        @side = nil
+    end
+
     @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
   end
 
