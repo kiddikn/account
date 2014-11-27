@@ -3,23 +3,14 @@
   <h1>大竹会計簡易アプリ</h1>
 </div>
 
-<ul>
-    <li>
-    <%= link_to t('.new', :default => t("helpers.links.new")),
-        new_ledger_path,
+    <%= link_to t('委員会支出確認'), '/ledgers/view',
         :class => 'btn btn-primary' %>
-    </li>
-    <li>
     <%= link_to t('立替報告'), '/ledgers/select_expense',
         :class => 'btn btn-primary' %>
-    </li>
-    <li>
     <%= link_to t('収入報告'), '/ledgers/add_income',
         :class => 'btn btn-primary' %>
-    </li>
-</ul>
-
-<%= render :partial => 'view' %>
+    <%= link_to t('会計用'), '/ledgers/account_select',
+        :class => 'btn btn-danger' %>
 
 
 

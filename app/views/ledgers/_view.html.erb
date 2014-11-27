@@ -4,9 +4,15 @@
     <tr>
       <th><%= model_class.human_attribute_name(:no) %></th>
       <th><%= "申請年"%></th>
+      <% if defined? @search %>
+      <th><%= sort_link @search, :month, "申請月" %></th>
+      <th><%= sort_link @search, :processing, "処理日" %></th>
+      <th><%= sort_link @search, :group, "委員会" %></th>
+      <% else %>
       <th><%= "申請月" %></th>
       <th><%= "処理日" %></th>
       <th><%= "委員会" %></th>
+      <% end %>
       <th><%= "立替者" %></th>
       <th><%= "項目" %></th>
       <th><%= "摘要" %></th>

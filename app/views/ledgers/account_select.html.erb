@@ -1,0 +1,17 @@
+<%- model_class = Ledger -%>
+<div class="page-header">
+  <h1>大竹会計専用ページ</h1>
+</div>
+
+    <%= link_to t('マスター収支帳簿'), '/ledgers/new',
+        :class => 'btn btn-primary' %>
+    <%= link_to t('検索'), '/ledgers/view',
+        :class => 'btn btn-primary' %>
+    <%= link_to t('検索'), '/ledgers/income_all',
+        :class => 'btn btn-primary' %>
+    <%= link_to t('report'), '/ledgers/report_select',
+        :class => 'btn btn-danger' %>
+
+
+
+

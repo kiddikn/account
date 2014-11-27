@@ -6,8 +6,8 @@ class Ledger < ActiveRecord::Base
     validates :year, presence: true
     validates :month, presence: true
 
-    def self.search(search) #self.でクラスメソッドとしている
-        if search.nil? || search.empty?
+    def self.group(search) #self.でクラスメソッドとしている
+        if search.blank?
             Ledger.all
         else
             Ledger.where(group: "#{search}")
@@ -15,7 +15,7 @@ class Ledger < ActiveRecord::Base
     end
 
     def self.choose(group, year, month)
-        if group.empty? && year.empty? && month.empty?
+        if group.blank? && year.blank? && month.blank?
             Ledger.all
         else
             Ledger.where(group: "#{group}", year: "#{year}", month: "#{month}")
