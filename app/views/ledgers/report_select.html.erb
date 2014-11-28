@@ -15,7 +15,7 @@
     <div class="form-group integer ledger_month">
         <%= label_tag :month, '申請月', :class => "month optional col-sm-3 control-label"  %>
         <div class="col-xs-2">
-            <%= select_tag :month, options_for_select(1..12), :class => "date optional form-control" %>
+            <%= select_tag :month, options_for_select(1..12,:selected => Time.now.month), :class => "date optional form-control" %>
         </div>
     </div>
 
