@@ -10,7 +10,13 @@ class Ledger < ActiveRecord::Base
         if group.blank? && month.blank?
             Ledger.all
         elsif group.blank? && !year.blank? && !month.blank?
-            Ledger.where(year: "#{year}", month: "#{month}")
+            # 立替申請月別データ
+            Ledger.where.not(group: "収入")
+                  .where(year: "#{year}", month: "#{month}")
+        elsif group.blank? && !year.blank? && month.blank?
+            # 総会用支出データ
+            Ledger.where.not(group: "収入")
+                  .where(year: "#{year}")
         elsif !group.blank? && !year.blank? && month.blank?
             Ledger.where(year: "#{year}", group: "#{group}")
         elsif !group.blank? && year.blank? && month.blank?

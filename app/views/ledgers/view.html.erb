@@ -9,7 +9,7 @@
     <%= f.select :group_cont, options_for_select([["all",""],["事務局", "事務局"], ["コミュニティ", "コミュニティ"],
                                                    ["パトロール", "パトロール"], ["スポーツ", "スポーツ"],["収入","収入"]]) %><br>
   </div>
-  <div class="actions"><%= f.submit "Search" %></div>
+  <div class="actions"><%= f.submit "Search", :class => "btn btn-primary" %></div>
 <% end %>
 
 <div class="page-header">

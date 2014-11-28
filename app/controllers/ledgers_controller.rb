@@ -82,6 +82,9 @@ class LedgersController < ApplicationController
     @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
   end
 
+  def meeting_output
+  end
+
   def income_all
     @ledgers = Ledger.choose("収入","","");
   end
@@ -100,7 +103,7 @@ class LedgersController < ApplicationController
     respond_to do |format|
       if @ledger.save
         format.html { redirect_to :back, notice: '帳簿に追加しました' }
-        format.json { render action: 'show', status: :created, location: @ledger }
+        format.json { render 'show', status: :created, location: @ledger }
       else
         format.html { redirect_to :back, alert: '記帳に失敗しました' }
         format.json { render json: @ledger.errors, status: :unprocessable_entity }
@@ -116,7 +119,7 @@ class LedgersController < ApplicationController
         format.html { redirect_to action: 'index', notice: '指定した更新が成功しました' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit', alert: '更新に失敗しました' }
+        format.html { render 'edit', alert: '更新に失敗しました' }
         format.json { render json: @ledger.errors, status: :unprocessable_entity }
       end
     end

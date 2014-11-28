@@ -10,6 +10,7 @@ Rails.application.routes.draw do
           get 'income_all'
           get 'report_select'
           get 'output', as: :output
+          get 'meeting_output'
       end
   end
 
