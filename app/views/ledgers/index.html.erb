@@ -3,6 +3,8 @@
   <h1>大竹会計簡易アプリ</h1>
 </div>
 
+    <%= link_to t('予算一覧'), '/ledgers/budget',
+        :class => 'btn btn-info' %>
     <%= link_to t('委員会支出確認'), '/ledgers/view',
         :class => 'btn btn-primary' %>
     <%= link_to t('立替報告'), '/ledgers/select_expense',

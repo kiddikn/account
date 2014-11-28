@@ -1,0 +1,2140 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>kiddikn</Author>
+  <LastAuthor>大竹会計</LastAuthor>
+  <Created>2014-11-28T09:13:32Z</Created>
+  <Company>筑波大学</Company>
+  <Version>15.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+  <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s20" ss:Name="パーセント">
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s17" ss:Name="桁区切り">
+   <NumberFormat ss:Format="#,##0;[Red]\-#,##0"/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="標準_会計全体決算">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ 明朝" x:CharSet="128" x:Family="Roman"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m245542872">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m368578512" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="m368578532">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="m368578552" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m368578572">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s64" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s65" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0.0%"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="DiagonalLeft" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s68" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s69" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat ss:Format="0.0%"/>
+  </Style>
+  <Style ss:ID="s70" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s71" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s73" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s74" ss:Parent="s20">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s75" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s77" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s80" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s81">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s82" ss:Parent="s20">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s83" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s85" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s86" ss:Parent="s17">
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s87" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s92" ss:Parent="s20">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s93" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s94">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s95" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s99" ss:Parent="s17">
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s100" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s102" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s103" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s104" ss:Parent="s20">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s105" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Double" ss:Weight="3"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s106">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Double" ss:Weight="3"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s107" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Double" ss:Weight="3"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s108">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s109" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s110" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Left" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Right" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Top" ss:LineStyle="Double" ss:Weight="3"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s111" ss:Parent="s20">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s112" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s113">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s114" ss:Parent="s20">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s115" ss:Parent="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:ShrinkToFit="1"/>
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s116" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s117">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s118" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s119">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s120" ss:Parent="s63">
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s121">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s122">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="14"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s123">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s124">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s125" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="DiagonalLeft" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s126">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="DiagonalLeft" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s127">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s128">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <NumberFormat ss:Format="0.0%"/>
+  </Style>
+  <Style ss:ID="s129" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s130" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s131" ss:Parent="s17">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s132" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s133">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s135">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s136" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s137" ss:Parent="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s139">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s140" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s141" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s143">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s145" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="DiagonalLeft" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s146" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s147" ss:Parent="s17">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s148" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s149">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="DiagonalLeft" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s150">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s152">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s153">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s154" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="9"
+    ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s156">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="9"
+    ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s158">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+  </Style>
+  <Style ss:ID="s159" ss:Parent="s63">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s161" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s162">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <Interior ss:Color="#C0C0C0" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s165" ss:Parent="s17">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s166" ss:Parent="s17">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s169">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s172" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s173" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s174" ss:Parent="s63">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <Interior/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s177">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s178">
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s181">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Left" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Right" ss:LineStyle="Double" ss:Weight="3"/>
+    <Border ss:Position="Top" ss:LineStyle="Double" ss:Weight="3"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Bold="1"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s182">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="s183">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s184">
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s185">
+   <Borders/>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s186">
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0;[Red]\-#,##0"/>
+  </Style>
+  <Style ss:ID="s187">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern"/>
+   <NumberFormat ss:Format="#,##0_);[Red]\(#,##0\)"/>
+  </Style>
+  <Style ss:ID="s188" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s189" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s190" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s191" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s192" ss:Parent="s17">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="ＭＳ Ｐゴシック" x:CharSet="128" x:Family="Modern" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="集計用">
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="79" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="78"
+   ss:DefaultRowHeight="14.25">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="104.25"/>
+   <Column ss:StyleID="s62" ss:Width="96.75"/>
+   <Column ss:Index="6" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="27"/>
+   <Row>
+    <Cell><Data ss:Type="String">平成<%= @year %>年度　大竹S.L.S.C.会計報告</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">平成<%= @year%>年度　大竹サーフラーフセービングクラブ会計の収支計算書</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">シュウニュウブ</PhoneticText><Data
+      ss:Type="String">収入の部</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:Index="7" ss:StyleID="s64"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ゼンインカイイインカイゴウケイ</PhoneticText><Data
+      ss:Type="String">全委員会合計</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">コウモク</PhoneticText><Data
+      ss:Type="String">項目</Data></Cell>
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ヨサンガク</PhoneticText><Data
+      ss:Type="String">予算額</Data></Cell>
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ケッサンガク</PhoneticText><Data
+      ss:Type="String">決算額</Data></Cell>
+    <Cell ss:StyleID="s69"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">シッコウリツ</PhoneticText><Data
+      ss:Type="String">執行率</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s70"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">コウモク</PhoneticText><Data
+      ss:Type="String">項目</Data></Cell>
+    <Cell ss:StyleID="s70"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ヨサンガク</PhoneticText><Data
+      ss:Type="String">予算額</Data></Cell>
+    <Cell ss:StyleID="s70"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ケッサンガク</PhoneticText><Data
+      ss:Type="String">決算額</Data></Cell>
+    <Cell ss:StyleID="s70"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">シッコウリツ</PhoneticText><Data
+      ss:Type="String">執行率</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s71"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ゼンネンドクリコシキン</PhoneticText><Data
+      ss:Type="String">前年度繰越金(A)</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s75"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ヒ</PhoneticText><Data
+      ss:Type="String">イベント費</Data></Cell>
+    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s76"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s77"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ガイブシュウニュウ</PhoneticText><Data
+      ss:Type="String">外部収入</Data></Cell>
+    <Cell ss:StyleID="s78"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">イタクリョウ</PhoneticText><Data
+      ss:Type="String">ガード委託料</Data></Cell>
+    <Cell ss:StyleID="s190"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s80"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">トウロクヒ</PhoneticText><Data
+      ss:Type="String">登録費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ホジョキン</PhoneticText><Data
+      ss:Type="String">補助金</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">消耗品費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">コウシュウカイザンキン</PhoneticText><Data
+      ss:Type="String">JLA講習会残金</Data></Cell>
+    <Cell ss:StyleID="s191"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">通信費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ジョセイキン</PhoneticText><Data
+      ss:Type="String">JLA Jr.pg助成金</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">旅費交通費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ホコタシタイキョウホジョキン</PhoneticText><Data
+      ss:Type="String">鉾田市体協補助金</Data></Cell>
+    <Cell ss:StyleID="s191"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ホケンリョウ</PhoneticText><Data
+      ss:Type="String">保険料</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s89"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ガイブシャレイキン</PhoneticText><Data
+      ss:Type="String">外部謝礼金</Data></Cell>
+    <Cell ss:StyleID="s192"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s189"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s92" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">雑費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s93"/>
+    <Cell ss:StyleID="s94"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ショウケイケイ</PhoneticText><Data
+      ss:Type="String">小計(B)</Data></Cell>
+    <Cell ss:StyleID="s85" ss:Formula="=SUM(R[-6]C:R[-1]C)"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s73" ss:Formula="=SUM(R[-6]C:R[-1]C)"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ビヒン</PhoneticText><Data
+      ss:Type="String">備品</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s77"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ナイブシュウニュウ</PhoneticText><Data
+      ss:Type="String">内部収入</Data></Cell>
+    <Cell ss:StyleID="s78"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ネンカイヒ</PhoneticText><Data
+      ss:Type="String">年会費</Data></Cell>
+    <Cell ss:StyleID="s190"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s188"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">コウネツヒ</PhoneticText><Data
+      ss:Type="String">光熱費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ナイブシエンキン</PhoneticText><Data
+      ss:Type="String">内部支援金</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">キザイ</PhoneticText><Data
+      ss:Type="String">機材</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ブッピンハンバイキン</PhoneticText><Data
+      ss:Type="String">物品販売金</Data></Cell>
+    <Cell ss:StyleID="s191"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">コウグ</PhoneticText><Data
+      ss:Type="String">工具</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ウンエイヒ</PhoneticText><Data
+      ss:Type="String">クラブ運営費※</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s100"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">シュウゼンヒ</PhoneticText><Data
+      ss:Type="String">修繕費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s84"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">リソク</PhoneticText><Data
+      ss:Type="String">利息</Data></Cell>
+    <Cell ss:StyleID="s191"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s100"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">チンシャクリョウ</PhoneticText><Data
+      ss:Type="String">賃借料</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s89"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">アンゼンホケンリョウ</PhoneticText><Data
+      ss:Type="String">スポーツ安全保険料</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s92" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ホジョキン</PhoneticText><Data
+      ss:Type="String">補助金</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s93"/>
+    <Cell ss:StyleID="s94"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ショウケイ</PhoneticText><Data
+      ss:Type="String">小計（C)　</Data></Cell>
+    <Cell ss:StyleID="s85" ss:Formula="=SUM(R[-6]C:R[-1]C)"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s95" ss:Formula="=SUM(R[-6]C:R[-1]C)"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s104" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">支払手数料</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s105"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">タンネンドシュウニュウ</PhoneticText><Data
+      ss:Type="String">単年度収入(D)</Data></Cell>
+    <Cell ss:StyleID="s106"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ショウケイケイ</PhoneticText><Data
+      ss:Type="String">小計（B)+（C)</Data></Cell>
+    <Cell ss:StyleID="s107" ss:Formula="=SUM(R[-8]C,R[-1]C)"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s107" ss:Formula="=SUM(R[-8]C,R[-1]C)"><Data ss:Type="Number"></Data></Cell>
+    <Cell ss:StyleID="s92" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ザイコホジヒ</PhoneticText><Data
+      ss:Type="String">在庫保持費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ソウケイ</PhoneticText><Data
+      ss:Type="String">総計</Data></Cell>
+    <Cell ss:StyleID="s108"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ソウケイ</PhoneticText><Data
+      ss:Type="String">総計(A)+(D)</Data></Cell>
+    <Cell ss:StyleID="s109" ss:Formula="=SUM(R[-16]C,R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s110" ss:Formula="=SUM(R[-16]C,R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s111" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">セイカツヒ</PhoneticText><Data
+      ss:Type="String">生活費</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s113"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s86"/>
+    <Cell ss:StyleID="s114"/>
+    <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ツミタテキン</PhoneticText><Data
+      ss:Type="String">積立金</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeAcross="4" ss:StyleID="s115"/>
+    <Cell ss:Index="7" ss:StyleID="s116"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ジンケンヒ</PhoneticText><Data
+      ss:Type="String">人件費</Data></Cell>
+    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s117"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s92" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:MergeAcross="3" ss:StyleID="s115"/>
+    <Cell ss:Index="7" ss:StyleID="s118"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ゴウケイ</PhoneticText><Data
+      ss:Type="String">合計</Data></Cell>
+    <Cell ss:StyleID="s119" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s119" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s92" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="7" ss:StyleID="s120"/>
+   </Row>
+   <Row ss:Height="17.25">
+    <Cell ss:StyleID="s121"/>
+    <Cell ss:Index="5" ss:StyleID="s122"/>
+    <Cell ss:Index="7" ss:StyleID="s120"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">シシュツブ</PhoneticText><Data
+      ss:Type="String">支出の部</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:Index="7" ss:StyleID="s123"><Data ss:Type="String">支出の部</Data></Cell>
+    <Cell ss:StyleID="s124"/>
+    <Cell ss:StyleID="s124"/>
+    <Cell ss:StyleID="s124"/>
+    <Cell ss:StyleID="s124"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s125"/>
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">コウモク</PhoneticText><Data
+      ss:Type="String">項目</Data></Cell>
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ヨサンガク</PhoneticText><Data
+      ss:Type="String">予算額</Data></Cell>
+    <Cell ss:StyleID="s68"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">ケッサンガク</PhoneticText><Data
+      ss:Type="String">決算額</Data></Cell>
+    <Cell ss:StyleID="s69"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">シッコウリツ</PhoneticText><Data
+      ss:Type="String">執行率</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s126"/>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">項目</Data></Cell>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">予算額</Data></Cell>
+    <Cell ss:StyleID="s127"><Data ss:Type="String">決算額</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">執行率</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"><Data ss:Type="String">事務局</Data></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">イベント費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","イベント費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","イベント費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(C29=0,&quot;-&quot;,D29/C29)"><Data ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"><Data ss:Type="String">スポーツ</Data></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">イベント費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","イベント費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","イベント費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s137"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">トウロクヒ</PhoneticText><Data
+      ss:Type="String">登録費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","登録費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","登録費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s137"><PhoneticText
+      xmlns="urn:schemas-microsoft-com:office:excel">トウロクヒ</PhoneticText><Data
+      ss:Type="String">登録費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","登録費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","登録費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">消耗品費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","消耗品費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","消耗品費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">消耗品費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","消耗品費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","消耗品費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">通信費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","通信費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","通信費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">通信費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","通信費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","通信費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">旅費交通費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","旅費交通費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","旅費交通費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">旅費交通費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","旅費交通費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","旅費交通費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">保険料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","保険料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","保険料","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">保険料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","保険料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","保険料","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">雑費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","雑費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","雑費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">雑費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","雑費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","雑費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">備品</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","備品","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","備品","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">備品</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","備品","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","備品","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">光熱費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","光熱費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","光熱費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">光熱費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","光熱費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","光熱費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">機材</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","機材","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","機材","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">機材</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","機材","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","機材","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">工具</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","工具","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","工具","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">工具</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","工具","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","工具","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s140"><Data
+      ss:Type="String">修繕費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","修繕費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","修繕費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s140"><Data
+      ss:Type="String">修繕費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","修繕費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","修繕費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s140"><Data
+      ss:Type="String">賃借料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","賃借料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","賃借料","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s140"><Data
+      ss:Type="String">賃借料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","賃借料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","賃借料","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">補助金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","補助金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","補助金","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">補助金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","補助金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","補助金","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">支払手数料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","支払手数料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","支払手数料","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">支払手数料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","支払手数料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","支払手数料","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">在庫保持費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","在庫保持費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","在庫保持費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">在庫保持費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","在庫保持費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","在庫保持費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">生活費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","生活費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","生活費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">生活費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","生活費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","生活費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">積立金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","積立金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","積立金","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">積立金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","積立金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","積立金","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s141"/>
+    <Cell ss:StyleID="s118"><Data
+      ss:Type="String">人件費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","人件費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","人件費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s143"/>
+    <Cell ss:StyleID="s118"><Data
+      ss:Type="String">人件費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","人件費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","人件費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s145"/>
+    <Cell ss:StyleID="s146"><Data
+      ss:Type="String">小計1</Data></Cell>
+    <Cell ss:StyleID="s147" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s147" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s148" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s149"/>
+    <Cell ss:StyleID="s150"><Data ss:Type="String">小計3</Data></Cell>
+    <Cell ss:StyleID="s152" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s152" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s153" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s154"><Data ss:Type="String">コミュニティ</Data></Cell>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">イベント費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","イベント費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","イベント費","")%></Data></Cell>
+    <Cell ss:StyleID="s148" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s156"><Data ss:Type="String">パトロール</Data></Cell>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">イベント費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","イベント費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","イベント費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s137"><Data
+      ss:Type="String">登録費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","登録費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","登録費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s137"><Data
+      ss:Type="String">登録費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","登録費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","登録費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">消耗品費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","消耗品費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","消耗品費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">消耗品費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","消耗品費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","消耗品費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">通信費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","通信費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","通信費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">通信費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","通信費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","通信費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">旅費交通費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","旅費交通費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","旅費交通費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">旅費交通費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","旅費交通費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","旅費交通費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">保険料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","保険料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","保険料","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">保険料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","保険料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","保険料","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">雑費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","雑費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","雑費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">雑費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","雑費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","雑費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">光熱費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","光熱費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","光熱費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">光熱費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","光熱費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","光熱費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">備品</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","備品","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","備品","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">備品</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","備品","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","備品","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">機材</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","機材","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","機材","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">機材</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","機材","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","機材","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s136"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">工具</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","工具","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","工具","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s139"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">工具</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","工具","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","工具","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s140"><Data
+      ss:Type="String">修繕費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","修繕費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","修繕費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s140"><Data
+      ss:Type="String">修繕費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","修繕費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","修繕費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">賃借料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","賃借料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","賃借料","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">賃借料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","賃借料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","賃借料","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">補助金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","補助金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","補助金","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">補助金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","補助金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","補助金","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">支払手数料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","支払手数料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","支払手数料","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">支払手数料</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","支払手数料","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","支払手数料","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">在庫保持費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","在庫保持費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","在庫保持費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">在庫保持費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","在庫保持費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","在庫保持費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">生活費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","生活費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","生活費","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">生活費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","生活費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","生活費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s129"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">積立金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","積立金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","積立金","")%></Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s133"/>
+    <Cell ss:StyleID="s130"><Data
+      ss:Type="String">積立金</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","積立金","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","積立金","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s159"/>
+    <Cell ss:StyleID="s118"><Data
+      ss:Type="String">人件費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","人件費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("コミュニティ","人件費","")%></Data></Cell>
+    <Cell ss:StyleID="s161" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s162"/>
+    <Cell ss:StyleID="s118"><Data
+      ss:Type="String">人件費</Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","人件費","予算")%></Data></Cell>
+    <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("パトロール","人件費","")%></Data></Cell>
+    <Cell ss:StyleID="s135" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:MergeAcross="1" ss:StyleID="m368578512"><Data
+      ss:Type="String">小計2</Data></Cell>
+    <Cell ss:StyleID="s165" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s166" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s161" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:MergeAcross="1" ss:StyleID="m368578532"><Data
+      ss:Type="String">小計4</Data></Cell>
+    <Cell ss:StyleID="s187" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s169" ss:Formula="=SUM(R[-19]C:R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s153" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:MergeAcross="1" ss:StyleID="m368578552"><Data
+      ss:Type="String">小計（1+2）</Data></Cell>
+    <Cell ss:StyleID="s172" ss:Formula="=SUM(R[-21]C,R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s173" ss:Formula="=SUM(R[-21]C,R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s174" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+    <Cell ss:Index="7" ss:MergeAcross="1" ss:StyleID="m368578572"><Data
+      ss:Type="String">小計（3+4）</Data></Cell>
+    <Cell ss:StyleID="s177" ss:Formula="=SUM(R[-21]C,R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s178" ss:Formula="=SUM(R[-21]C,R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s153" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="7" ss:MergeAcross="1" ss:StyleID="m245542872"><Data
+      ss:Type="String">単年度支出(1+2+3+4)</Data></Cell>
+    <Cell ss:StyleID="s76" ss:Formula="=SUM(R[-1]C[-6]+R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s181" ss:Formula="=SUM(R[-1]C[-6],R[-1]C)"><Data
+      ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s182" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
+      ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row ss:Height="15">
+    <Cell ss:Index="7" ss:MergeAcross="1" ss:StyleID="s183"><Data
+      ss:Type="String">収支差額(次期繰越金)</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s102" ss:Formula="=R[-50]C[-6]-R[-1]C"><Data ss:Type="Number"><%= @ledgers.amount_on("","","")%></Data></Cell>
+   </Row>
+   <Row ss:Index="73">
+    <Cell ss:Index="10" ss:StyleID="s184"/>
+    <Cell ss:StyleID="s184"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="10" ss:StyleID="s184"/>
+    <Cell ss:StyleID="s184"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="10" ss:StyleID="s185"/>
+    <Cell ss:StyleID="s86"/>
+   </Row>
+   <Row ss:Index="79">
+    <Cell ss:Index="10" ss:StyleID="s186"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>56</Scale>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>36</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>11</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

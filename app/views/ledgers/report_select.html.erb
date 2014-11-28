@@ -63,6 +63,14 @@
     <div class="page-header">
         <h1>総会用支出データ出力</h1>
     </div>
+    <div class="alert alert-danger" role="alert">注意：技術的・時間的な問題
+        <ul>
+            <li>収入の部は自力でやること</li>
+            <li>執行率は自分で計算させる事(例:=IF(D1=0,"-",E1/D1))</li>
+            <li>小計・総計も自分で計算させる事(各表に小計・総計あり。右下に繰越金計算などあり。)</li>
+        </ul>
+    </div>
+
 
     <%= form_tag meeting_output_ledgers_path(format: :xls), :class => "form-horizontal", method: :get do %>
         <div class="form-group integer ledger_year">
