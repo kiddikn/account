@@ -6,6 +6,7 @@ Rails.application.routes.draw do
           get 'add_expense'
           get 'add_income'
           get 'view'
+          get 'budget'
           get 'account_select'
           get 'income_all'
           get 'report_select'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
           get 'meeting_output'
           get 'import_csv_new'
           post 'import_csv'
+          post 'import_budget'
       end
   end
 

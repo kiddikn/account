@@ -22,7 +22,7 @@ class LedgersController < ApplicationController
 
   def view
     @search = Ledger.search(params[:q])
-    @ledgers = @search.result
+    @ledgers = @search.result.where.not(manager: "予算")
 
     respond_to do |format|
       format.html # view.html.erb
@@ -60,10 +60,18 @@ class LedgersController < ApplicationController
     @ledgers = Ledger.choose("収入","","");
   end
 
+  def budget
+    @ledgers = Ledger.where(manager: "予算")
+    respond_to do |format|
+      format.html # view.html.erb
+      format.json { render json: @ledgers }
+    end
+
+  end
+
   # 会計専用ページ
   def account_select
   end
-
 
   def report_select
   end
@@ -75,6 +83,20 @@ class LedgersController < ApplicationController
   def import_csv
       respond_to do |format|
           if Ledger.import_csv(params[:csv_file])
+              flash[:notice] = "CSVファイルの読み込みに成功。"
+              format.html { redirect_to report_select_ledgers_path }
+              format.json { head :no_content }
+          else
+              flash[:alert] = "CSVファイルの読み込みに失敗しました。ファイルを確認してください。"
+              format.html { redirect_to import_csv_new_ledgers_path}
+              format.json { head :no_content }
+          end
+      end
+  end
+
+  def import_budget
+      respond_to do |format|
+          if Ledger.import_budget(params[:csv_file])
               flash[:notice] = "CSVファイルの読み込みに成功。"
               format.html { redirect_to report_select_ledgers_path }
               format.json { head :no_content }
@@ -100,6 +122,8 @@ class LedgersController < ApplicationController
 
   # 総会資料出力
   def meeting_output
+    @year = params[:year].to_s
+    @ledgers = Ledger.all
   end
 
   def income_all

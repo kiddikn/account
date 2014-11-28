@@ -25,13 +25,50 @@
 
 <%= form_tag({controller: "ledgers", action: "import_csv", method: "post"}, {multipart: true}) do %>
   <div class="field">
-    <%= label_tag "CSVファイルを選択" %><br>
+    <%= label_tag "支出ファイルを選択" %><br>
     <%= file_field_tag :csv_file %>
   </div>
 
   <div class="actions">
-      <%= submit_tag "CSVファイルを読み込む", :class => "btn btn-danger"%>
+      <%= submit_tag "支出ファイルを読み込む", :class => "btn btn-danger"%>
   </div>
 <% end %>
+
+<h1>支出登録（CSVファイル）</h1>
+<div class="alert alert-danger" role="alert">注意：
+    <ul>
+        <li>列の順番</li>
+        <ul>
+            <li>No(自分で追加Yから始まる)</li>
+            <li>申請年(noから自分で追加)</li>
+            <li>申請月(noから自分で追加,1月で統一)</li>
+            <li>立替日(yyyy-01-01で統一)</li>
+            <li>委員会</li>
+            <li>立替者(予算で統一)</li>
+            <li>項目</li>
+            <li>摘要</li>
+            <li>金額</li>
+            <li>備考</li>
+        </ul>
+        <li>各列のデータ型</li>
+        <ul>
+            <li>立替日のformat(yyyy-mm-dd)</li>
+            <li>金額は数値型</li>
+        </ul>
+    </ul>
+</div>
+
+
+<%= form_tag({controller: "ledgers", action: "import_budget", method: "post"}, {multipart: true}) do %>
+  <div class="field">
+    <%= label_tag "予算ファイルを選択" %><br>
+    <%= file_field_tag :csv_file %>
+  </div>
+
+  <div class="actions">
+      <%= submit_tag "予算ファイルを読み込む", :class => "btn btn-danger"%>
+  </div>
+<% end %>
+
 
 <%= link_to 'report選択に戻る', report_select_ledgers_path %>

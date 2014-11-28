@@ -3,7 +3,8 @@
     <div class="form-group integer ledger_year">
         <%= label_tag :year, '申請年', :class => "year optional col-sm-3 control-label"  %>
         <div class="col-xs-3">
-        <%= select_tag :year, options_for_select([2014]), :class=>"year optional col-sm-3 form-control"%>
+            <%   @year = 2014 %>
+        <%= select_tag :year, options_for_select([@year]), :class=>"year optional col-sm-3 form-control"%>
         </div>
     </div>
     <div class="form-group integer ledger_month">
