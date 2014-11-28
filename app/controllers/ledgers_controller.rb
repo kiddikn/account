@@ -20,9 +20,6 @@ class LedgersController < ApplicationController
   def show
   end
 
-  def select_group
-  end
-
   def view
     @search = Ledger.search(params[:q])
     @ledgers = @search.result
@@ -71,6 +68,25 @@ class LedgersController < ApplicationController
   def report_select
   end
 
+  # CSVインポート
+  def import_csv_new
+  end
+
+  def import_csv
+      respond_to do |format|
+          if Ledger.import_csv(params[:csv_file])
+              flash[:notice] = "CSVファイルの読み込みに成功。"
+              format.html { redirect_to report_select_ledgers_path }
+              format.json { head :no_content }
+          else
+              flash[:alert] = "CSVファイルの読み込みに失敗しました。ファイルを確認してください。"
+              format.html { redirect_to import_csv_new_ledgers_path}
+              format.json { head :no_content }
+          end
+      end
+  end
+
+  # report出力
   def output
     @year = params[:year].to_s
     if !params[:month].blank?
@@ -82,6 +98,7 @@ class LedgersController < ApplicationController
     @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
   end
 
+  # 総会資料出力
   def meeting_output
   end
 

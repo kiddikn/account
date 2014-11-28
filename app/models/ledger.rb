@@ -1,3 +1,6 @@
+require 'csv'   # csv操作を可能にするライブラリ
+require 'kconv' # 文字コード操作をおこなうライブラリ
+
 class Ledger < ActiveRecord::Base
     validates :group, presence: true
     validates :manager, presence: true
@@ -26,7 +29,31 @@ class Ledger < ActiveRecord::Base
         end
     end
 
+    # CSVファイルを読み込み、ユーザーを登録する
+    def self.import_csv(csv_file)
+        if !csv_file.nil?
+            # csvファイルを受け取って文字列にする
+            csv_text = csv_file.read
 
-    # 大竹会計が欲しい検索を追加
+            #文字列をUTF-8に変換
+            CSV.parse(Kconv.toutf8(csv_text)) do |row|
+
+                ledger = Ledger.new
+                ledger.no         = row[0]
+                ledger.processing = row[1]
+                ledger.group      = row[2]
+                ledger.manager    = row[3]
+                ledger.item       = row[4]
+                ledger.resume     = row[5]
+                ledger.amount     = row[6]
+                ledger.note       = row[7]
+                ledger.year       = row[8]
+                ledger.month      = row[9]
+
+                ledger.save
+            end
+        else
+        end
+    end
 
 end

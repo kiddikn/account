@@ -1,0 +1,13 @@
+<h1>支出登録（CSVファイル）</h1>
+<%= form_tag({controller: "ledgers", action: "import_csv", method: "post"}, {multipart: true}) do %>
+  <div class="field">
+    <%= label_tag "CSVファイルを選択" %><br>
+    <%= file_field_tag :csv_file %>
+  </div>
+
+  <div class="actions">
+      <%= submit_tag "CSVファイルを読み込む", :class => "btn btn-primary"%>
+  </div>
+<% end %>
+
+<%= link_to 'report選択に戻る', report_select_ledgers_path %>
