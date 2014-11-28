@@ -11,6 +11,8 @@ Rails.application.routes.draw do
           get 'report_select'
           get 'output', as: :output
           get 'meeting_output'
+          get 'import_csv_new'
+          post 'import_csv'
       end
   end
 
