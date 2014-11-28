@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
-  resources :ledgers
+  resources :ledgers do
+
+      collection do
+          get 'select_expense'
+          get 'add_expense'
+          get 'add_income'
+          get 'view'
+          get 'account_select'
+          get 'income_all'
+          get 'report_select'
+          get 'output', as: :output
+          get 'meeting_output'
+      end
+  end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,55 @@
+<%- model_class = Ledger -%>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:no) %></th>
+      <th><%= "申請年"%></th>
+      <% if defined? @search %>
+      <th><%= sort_link @search, :month, "申請月" %></th>
+      <th><%= sort_link @search, :processing, "処理日" %></th>
+      <th><%= sort_link @search, :group, "委員会" %></th>
+      <th><%= sort_link @search, :manager, "立替者" %></th>
+      <th><%= sort_link @search, :item, "項目" %></th>
+      <th><%= sort_link @search, :resume, "摘要" %></th>
+      <th><%= sort_link @search, :amount, "金額" %></th>
+      <th><%= sort_link @search, :note, "備考" %></th>
+      <% else %>
+      <th><%= "申請月" %></th>
+      <th><%= "処理日" %></th>
+      <th><%= "委員会" %></th>
+      <th><%= "立替者" %></th>
+      <th><%= "項目" %></th>
+      <th><%= "摘要" %></th>
+      <th><%= "金額" %></th>
+      <th><%= "備考" %></th>
+      <% end %>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @ledgers.each do |ledger| %>
+      <tr>
+        <td><%= ledger.no %></td>
+        <td><%= ledger.year %></td>
+        <td><%= ledger.month %></td>
+        <td><%= ledger.processing%></td>
+        <td><%= ledger.group %></td>
+        <td><%= ledger.manager %></td>
+        <td><%= ledger.item %></td>
+        <td><%= ledger.resume %></td>
+        <td><%= ledger.amount %></td>
+        <td><%= ledger.note %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_ledger_path(ledger), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      ledger_path(ledger),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => '削除しますか？')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

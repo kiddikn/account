@@ -48,6 +48,9 @@ gem "less-rails"
 gem "twitter-bootstrap-rails", github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
 gem "simple_form"
 
+# 検索用
+gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
