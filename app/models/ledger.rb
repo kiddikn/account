@@ -52,7 +52,9 @@ class Ledger < ActiveRecord::Base
 
                 ledger.save
             end
+            true
         else
+            nil
         end
     end
 
