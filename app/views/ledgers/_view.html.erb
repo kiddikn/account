@@ -1,4 +1,8 @@
 <%- model_class = Ledger -%>
+<div class="col-xs-2">
+    <div class="alert alert-success" role="alert">総額：<%= number_with_delimiter(@ledgers.sum(:amount)) %>円</div>
+</div>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -37,7 +41,7 @@
         <td><%= ledger.manager %></td>
         <td><%= ledger.item %></td>
         <td><%= ledger.resume %></td>
-        <td><%= ledger.amount %></td>
+        <td><%= number_with_delimiter(ledger.amount) %></td>
         <td><%= ledger.note %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
