@@ -60,14 +60,16 @@ class LedgersController < ApplicationController
     @ledgers = Ledger.choose("収入","","");
   end
 
-  def budget
-    @ledgers = Ledger.where(manager: "予算")
+  def budget_view
+    @search = Ledger.search(params[:q])
+    @ledgers = @search.result.where(manager: "予算")
+
     respond_to do |format|
       format.html # view.html.erb
       format.json { render json: @ledgers }
     end
-
   end
+
 
   # 会計専用ページ
   def account_select
@@ -133,7 +135,7 @@ class LedgersController < ApplicationController
   # GET /ledgers/new
   def new
     @ledger = Ledger.new
-    @ledgers = Ledger.all
+    @ledgers = Ledger.where.not(manager: "予算")
   end
 
   # POST /ledgers

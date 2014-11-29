@@ -6,7 +6,7 @@ Rails.application.routes.draw do
           get 'add_expense'
           get 'add_income'
           get 'view'
-          get 'budget'
+          get 'budget_view'
           get 'account_select'
           get 'income_all'
           get 'report_select'

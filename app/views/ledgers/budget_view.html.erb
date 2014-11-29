@@ -1,0 +1,29 @@
+<%- model_class = Ledger -%>
+<div class="page-header">
+  <h1>予算検索</h1>
+</div>
+
+<%= search_form_for @search, url: '/ledgers/budget_view' do |f| %>
+  <div class="field">
+    <%= f.label :group_cont, "グループ" %>
+    <%= f.select :group_cont, options_for_select([["all",""],["事務局", "事務局"], ["コミュニティ", "コミュニティ"],
+                                                   ["パトロール", "パトロール"], ["スポーツ", "スポーツ"],["収入","収入"]]) %><br>
+  </div>
+  <div class="field">
+    <%= f.label :item_cont, "項目" %>
+    <%= f.select :item_cont, options_for_select(["","イベント費","登録費","消耗品費","通信費","旅費交通費","保険料","雑費",
+                     "備品","光熱費","機材","工具","修繕費",
+                     "賃借料","補助金","支払手数料","在庫保持費","生活費","積立金","人件費"]) %><br>
+  </div>
+  <div class="field">
+    <%= f.label :resume_cont, "摘要" %>
+    <%= f.search_field :resume_cont %>
+  </div>
+  <div class="actions"><%= f.submit "Search", :class => "btn btn-primary" %></div>
+<% end %>
+
+<div class="page-header">
+  <h1>予算一覧</h1>
+</div>
+<%= render 'view' %>
+
