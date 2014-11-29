@@ -3,8 +3,7 @@
     <div class="form-group integer ledger_year">
         <%= label_tag :year, '申請年', :class => "year optional col-sm-3 control-label"  %>
         <div class="col-xs-3">
-            <%   @year = 2014 %>
-        <%= select_tag :year, options_for_select([@year]), :class=>"year optional col-sm-3 form-control"%>
+        <%= select_tag :year, options_for_select(@year), :class=>"year optional col-sm-3 form-control"%>
         </div>
     </div>
     <div class="form-group integer ledger_month">
@@ -16,8 +15,7 @@
     <div class="form-group string ledger_group">
         <%= label_tag :group, '委員会', :class => "month optional col-sm-3 control-label"  %>
         <div class="col-xs-3">
-        <%= select_tag :group, options_for_select([["事務局", "事務局"], ["コミュニティ", "コミュニティ"],
-                                                   ["パトロール", "パトロール"], ["スポーツ", "スポーツ"]]),  :include_blank => true,
+        <%= select_tag :group, options_for_select(@groups),  :include_blank => true,
                                                    :class=>"month optional col-sm-3 form-control" %>
         </div>
     </div>

@@ -33,11 +33,6 @@ class Ledger < ActiveRecord::Base
         end
     end
 
-    # 予算関連
-    def self.budget
-        Ledger.where(manager: "予算")
-    end
-
     # CSVファイルを読み込み、ユーザーを登録する
     def self.import_budget(csv_file)
         if !csv_file.nil?
