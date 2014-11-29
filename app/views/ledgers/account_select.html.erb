@@ -3,6 +3,7 @@
   <h1>大竹会計専用ページ</h1>
 </div>
 
+<div class="container"">
     <%= link_to t('マスター収支帳簿'), '/ledgers/new',
         :class => 'btn btn-info' %>
     <%= link_to t('予算一覧'), '/ledgers/budget_view',
@@ -13,7 +14,10 @@
         :class => 'btn btn-info' %>
     <%= link_to t('report'), '/ledgers/report_select',
         :class => 'btn btn-info' %>
+</div>
 
-
+    <div class="container">
+        <span class="label label-warning"><%= link_to 'プロフィール変更', edit_user_registration_path %></span>
+    </div>
 
 

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  root :to => 'ledgers#index'
   resources :ledgers do
-
       collection do
           get 'select_expense'
           get 'add_expense'

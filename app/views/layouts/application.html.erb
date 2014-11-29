@@ -15,6 +15,15 @@
                     <ul class="nav navbar-nav">
                         <li><%= link_to "Home", "/ledgers" %></li>
                         <li><%= link_to "about", "http://kiddikn.php.xdomain.jp/kiddikn/", :target => '_blank' %></li>
+                        <!-- user_signed_in? はユーザがログインしているか調べるdeviseのHelperメソッド -->
+                    <% if user_signed_in? %>
+                        <!-- current_user は現在ログインしているUserオブジェクトを返すdeviseのHelperメソッド -->
+                        <!-- *_path はUserモデルを作成したときに、自動で作成されてますので、rake routesで確認できます -->
+
+                        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+                    <% else %>
+                        <li><%= link_to "会計専用ログイン", new_user_session_path %></li>
+                    <% end %>
                     </ul>
                 </div>
             </div>
@@ -29,6 +38,7 @@
                             <%= msg %>
                         </div>
                     <% end %>
+
                     <%= yield %>
                 </div>
 
