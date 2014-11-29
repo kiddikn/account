@@ -987,10 +987,10 @@
    <Column ss:StyleID="s62" ss:Width="96.75"/>
    <Column ss:Index="6" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="27"/>
    <Row>
-    <Cell><Data ss:Type="String">平成<%= @year %>年度　大竹S.L.S.C.会計報告</Data></Cell>
+    <Cell><Data ss:Type="String"><%= @year %>年度　大竹S.L.S.C.会計報告</Data></Cell>
    </Row>
    <Row>
-    <Cell><Data ss:Type="String">平成<%= @year%>年度　大竹サーフラーフセービングクラブ会計の収支計算書</Data></Cell>
+    <Cell><Data ss:Type="String"><%= @year%>年度　大竹サーフラーフセービングクラブ会計の収支計算書</Data></Cell>
    </Row>
    <Row>
     <Cell ss:StyleID="s64"><PhoneticText
@@ -1046,7 +1046,9 @@
     <Cell ss:Index="7" ss:StyleID="s75"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ヒ</PhoneticText><Data
       ss:Type="String">イベント費</Data></Cell>
-    <Cell ss:StyleID="s76"/>
+    <Cell ss:StyleID="s76"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s76"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1067,7 +1069,9 @@
     <Cell ss:Index="7" ss:StyleID="s80"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">トウロクヒ</PhoneticText><Data
       ss:Type="String">登録費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1084,7 +1088,9 @@
     <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
       ss:Type="String">-</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">消耗品費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1101,7 +1107,9 @@
     <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
       ss:Type="String">-</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">通信費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1118,7 +1126,9 @@
     <Cell ss:StyleID="s82" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
       ss:Type="String">-</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">旅費交通費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1137,7 +1147,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ホケンリョウ</PhoneticText><Data
       ss:Type="String">保険料</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1154,7 +1166,9 @@
     <Cell ss:StyleID="s92" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
       ss:Type="String">-</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">雑費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1173,7 +1187,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ビヒン</PhoneticText><Data
       ss:Type="String">備品</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1194,7 +1210,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">コウネツヒ</PhoneticText><Data
       ss:Type="String">光熱費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1213,7 +1231,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">キザイ</PhoneticText><Data
       ss:Type="String">機材</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1232,7 +1252,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">コウグ</PhoneticText><Data
       ss:Type="String">工具</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1251,7 +1273,9 @@
     <Cell ss:Index="7" ss:StyleID="s100"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">シュウゼンヒ</PhoneticText><Data
       ss:Type="String">修繕費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1270,7 +1294,9 @@
     <Cell ss:Index="7" ss:StyleID="s100"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">チンシャクリョウ</PhoneticText><Data
       ss:Type="String">賃借料</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1289,7 +1315,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ホジョキン</PhoneticText><Data
       ss:Type="String">補助金</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1306,7 +1334,9 @@
     <Cell ss:StyleID="s104" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data
       ss:Type="String">-</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">支払手数料</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1327,7 +1357,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ザイコホジヒ</PhoneticText><Data
       ss:Type="String">在庫保持費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1350,7 +1382,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">セイカツヒ</PhoneticText><Data
       ss:Type="String">生活費</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1366,7 +1400,9 @@
     <Cell ss:Index="7" ss:StyleID="s87"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ツミタテキン</PhoneticText><Data
       ss:Type="String">積立金</Data></Cell>
-    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s81"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
@@ -1378,7 +1414,9 @@
     <Cell ss:Index="7" ss:StyleID="s116"><PhoneticText
       xmlns="urn:schemas-microsoft-com:office:excel">ジンケンヒ</PhoneticText><Data
       ss:Type="String">人件費</Data></Cell>
-    <Cell ss:StyleID="s117"/>
+    <Cell ss:StyleID="s117"
+     ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
+      ss:Type="Number">0</Data></Cell>
     <Cell ss:StyleID="s117"
      ss:Formula="=SUM(R[24]C[-5],R[44]C[-5],R[44]C[1],R[24]C[1])"><Data
       ss:Type="Number">0</Data></Cell>
