@@ -37,7 +37,7 @@ class Ledger < ActiveRecord::Base
 
     # CSVファイルを読み込み、ユーザーを登録する
     def self.import_budget(csv_file)
-        if !csv_file.nil?
+        unless csv_file.nil?
             # csvファイルを受け取って文字列にする
             csv_text = csv_file.read
 
@@ -67,7 +67,7 @@ class Ledger < ActiveRecord::Base
     # 支出関連
     # CSVファイルを読み込み、ユーザーを登録する
     def self.import_csv(csv_file)
-        if !csv_file.nil?
+        unless csv_file.nil?
             # csvファイルを受け取って文字列にする
             csv_text = csv_file.read
 
