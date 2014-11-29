@@ -6,7 +6,7 @@ class LedgersController < ApplicationController
   # TODO:収入の年度選択・DBのバックアップ機能・総会資料の修正
   # TODO_MUST:会計ページへのアクセス制限・予算額によるvalidateかエラー表示
   # ユーザがログインしていないと"show"にアクセスできない
-  before_action :authenticate_user!, only: [:view, :account_select, :income_all, :new, :report_select]
+  before_action :authenticate_user!, only: [:account_select, :income_all, :new, :report_select]
 
 
   GROUP_MAP = {
