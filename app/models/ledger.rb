@@ -13,6 +13,7 @@ class Ledger < ActiveRecord::Base
     def self.choose(group, year, month)
         if group.blank? && month.blank?
             Ledger.where.not(manager: "予算")
+                  .where(year: year)
         elsif group.blank? && !year.blank? && !month.blank?
             # 立替申請月別データ
             Ledger.where.not(group: "収入", manager: "予算")
@@ -22,6 +23,7 @@ class Ledger < ActiveRecord::Base
             Ledger.where.not(group: "収入", manager: "予算")
                   .where(year: "#{year}")
         elsif !group.blank? && !year.blank? && month.blank?
+            # 収入all一覧
             Ledger.where.not(manager: "予算")
                   .where(year: "#{year}", group: "#{group}")
         elsif !group.blank? && year.blank? && month.blank?
@@ -31,11 +33,6 @@ class Ledger < ActiveRecord::Base
             Ledger.where.not(manager: "予算")
                   .where(group: "#{group}", year: "#{year}", month: "#{month}")
         end
-    end
-
-    # 予算関連
-    def self.budget
-        Ledger.where(manager: "予算")
     end
 
     # CSVファイルを読み込み、ユーザーを登録する

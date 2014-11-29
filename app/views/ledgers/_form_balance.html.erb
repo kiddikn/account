@@ -2,13 +2,11 @@
     <%= f.input :no        , :as => :hidden %>
     <%= f.input :year      , :as => :hidden  %>
     <%= f.input :month     , :as => :hidden %>
-    <%= f.input :processing, label: "立替日",input_wrapper_html: { class: "col-xs-2" } %>
+    <%= f.input :processing, label: @processing,input_wrapper_html: { class: "col-xs-2" } %>
     <%= f.input :group     , :as => :hidden %>
-    <%= f.input :manager   , label: "立替者", input_wrapper_html: { class: "col-xs-3" } %>
+    <%= f.input :manager   , label: @manager, input_wrapper_html: { class: "col-xs-3" } %>
     <%= f.input :item      , label: "項目", input_wrapper_html: { class: "col-xs-3" },
-        collection: ["イベント費","登録費","消耗品費","通信費","旅費交通費","保険料","雑費",
-                     "備品","光熱費","機材","工具","修繕費",
-                     "賃借料","補助金","支払手数料","在庫保持費","生活費","積立金","人件費"] %>
+        collection: @items_collect %>
     <%= f.input :resume    , label: "摘要", input_wrapper_html: { class: "col-xs-5" } %>
     <%= f.input :amount    , label: "金額", input_wrapper_html: { class: "col-xs-3" }, hint: "半角英数字で入力(,は入れない)" %>
     <%= f.input :note      , label: "備考", input_wrapper_html: { class: "col-xs-5" } %>

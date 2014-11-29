@@ -1,9 +1,9 @@
 <%- model_class = Ledger -%>
 <div class="page-header">
-  <h1><%= @group %> 検索</h1>
+  <h1>予算検索</h1>
 </div>
 
-<%= search_form_for @search, url: '/ledgers/view' do |f| %>
+<%= search_form_for @search, url: '/ledgers/budget_view' do |f| %>
   <div class="field">
     <%= f.label :year_eq, "年度" %>
     <%= f.select :year_eq, options_for_select(@years) %><br>
@@ -17,18 +17,14 @@
     <%= f.select :item_cont, options_for_select(@items) %><br>
   </div>
   <div class="field">
-    <%= f.label :manager_cont, "立替者" %>
-    <%= f.search_field :manager_cont %>
-  </div>
-  <div class="field">
     <%= f.label :resume_cont, "摘要" %>
     <%= f.search_field :resume_cont %>
   </div>
-
   <div class="actions"><%= f.submit "Search", :class => "btn btn-primary" %></div>
 <% end %>
 
 <div class="page-header">
-  <h1><%= @group %> 収支一覧表</h1>
+  <h1>予算一覧</h1>
 </div>
 <%= render 'view' %>
+
