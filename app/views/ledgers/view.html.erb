@@ -5,6 +5,10 @@
 
 <%= search_form_for @search, url: '/ledgers/view' do |f| %>
   <div class="field">
+    <%= f.label :year_eq, "年度" %>
+    <%= f.select :year_eq, options_for_select(@years) %><br>
+  </div>
+  <div class="field">
     <%= f.label :group_cont, "グループ" %>
     <%= f.select :group_cont, options_for_select(@groups) %><br>
   </div>
@@ -20,6 +24,7 @@
     <%= f.label :resume_cont, "摘要" %>
     <%= f.search_field :resume_cont %>
   </div>
+
   <div class="actions"><%= f.submit "Search", :class => "btn btn-primary" %></div>
 <% end %>
 

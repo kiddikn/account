@@ -5,6 +5,10 @@
 
 <%= search_form_for @search, url: '/ledgers/budget_view' do |f| %>
   <div class="field">
+    <%= f.label :year_eq, "年度" %>
+    <%= f.select :year_eq, options_for_select(@years) %><br>
+  </div>
+  <div class="field">
     <%= f.label :group_cont, "グループ" %>
     <%= f.select :group_cont, options_for_select(@groups) %><br>
   </div>
