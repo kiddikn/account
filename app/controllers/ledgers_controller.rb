@@ -164,11 +164,7 @@ class LedgersController < ApplicationController
   # report出力
   def output
     @year = params[:year].to_s
-    if params[:month].present?
-        @side = params[:month].to_s + "月立替分"
-    else
-        @side = nil
-    end
+    @side = params[:month].present? ? params[:month].to_s + "月立替分" : nil
 
     @ledgers = Ledger.choose(params[:group], params[:year], params[:month])
   end
