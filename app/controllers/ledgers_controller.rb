@@ -125,6 +125,7 @@ class LedgersController < ApplicationController
 
   def report_select
       @years = YEARS
+      @groups = @groups = ["収入",*GROUPS]
       @items = INCOME_HASH.merge(GROUPS_HASH)
   end
 

@@ -38,7 +38,7 @@
     <div class="form-group string ledger_group">
         <%= label_tag :year, 'グループ', :class => "group optional col-sm-3 control-label"  %>
         <div class="col-xs-2">
-            <%= select_tag :group, options_for_select(["収入","コミュニティ","事務局","スポーツ","パトロール"]), :class => "group optional form-control" %>
+            <%= select_tag :group, options_for_select(@groups), :class => "group optional form-control" %>
         </div>
     </div>
 
