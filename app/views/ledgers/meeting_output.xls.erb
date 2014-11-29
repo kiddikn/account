@@ -1482,7 +1482,7 @@
     <Cell ss:StyleID="s130"><Data ss:Type="String">イベント費</Data></Cell>
     <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","イベント費","予算")%></Data></Cell>
     <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("事務局","イベント費","")%></Data></Cell>
-    <Cell ss:StyleID="s132" ss:Formula="=IF(C29=0,&quot;-&quot;,D29/C29)"><Data ss:Type="String">-</Data></Cell>
+    <Cell ss:StyleID="s132" ss:Formula="=IF(RC[-2]=0,&quot;-&quot;,RC[-1]/RC[-2])"><Data ss:Type="String">-</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s133"><Data ss:Type="String">スポーツ</Data></Cell>
     <Cell ss:StyleID="s130"><Data ss:Type="String">イベント費</Data></Cell>
     <Cell ss:StyleID="s131"><Data ss:Type="Number"><%= @ledgers.amount_on("スポーツ","イベント費","予算")%></Data></Cell>
