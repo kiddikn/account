@@ -1,6 +1,6 @@
 class LedgersController < ApplicationController
   # 使用する年度の設定
-  YEARS = [2014]
+  YEARS = [2015]
   # CSVによる予算のインポート、dbのバックアップ
   # 以上、年度ごとに修正の必要あり
   # TODO:収入の年度選択・DBのバックアップ機能・総会資料の修正
