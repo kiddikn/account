@@ -52,7 +52,7 @@ gem "simple_form"
 gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'rails-4.1'
 
 # user認証
-gem 'devise'
+gem "devise", ">= 4.7.1"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
